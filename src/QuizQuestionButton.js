@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 
 class QuizQuestionButton extends Component {
 
-    render(button_text) {
+    handleClick = () => {
+        this.props.clickHandler(this.props.button_text)
+    }
 
-        const handleClick = () => {
-            
-        }
+    render(button_text) {
 
 
         return (
